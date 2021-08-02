@@ -10,6 +10,7 @@ $(function () {
 
   $('.header__btn-menu').on('click', function () {
     $('.menu').toggleClass('menu--open');
+    $('.header__btn-menu').toggleClass('header__btn-menu--open');
   });
 
   if ($(window).width() > 651) {

@@ -356,6 +356,30 @@
     }
   }
 
+
+  .header__btn-menu,
+  .header__btn-menu--open {
+    span {
+      transition: all .3s;
+    }
+  }
+
+  .header__btn-menu--open {
+
+
+    span:nth-child(1) {
+      transform: translateY(9px) rotate(135deg);
+    }
+
+    span:nth-child(3) {
+      transform: translateY(-9px) rotate(-135deg);
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+    }
+  }
+
   .menu {
     padding-right: 0;
     width: 100%;
