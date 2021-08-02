@@ -17,6 +17,7 @@
     border: none;
     padding: 0;
     cursor: pointer;
+    display: none;
   }
 
   &__btn-menu {
@@ -202,6 +203,7 @@
 }
 
 .rightside-menu {
+  display: none;
   position: absolute;
   right: 0;
   top: 0;
@@ -314,6 +316,7 @@
       height: 722px;
       top: 0;
       z-index: -1;
+      background-size: cover;
     }
   }
 
@@ -507,6 +510,7 @@
     align-items: flex-end;
     border-bottom: 2px solid rgba($title, .7);
     position: relative;
+    justify-content: space-between;
 
     &::before {
       content: '';
@@ -530,7 +534,7 @@
   }
 
   &__item--production {
-    margin-left: 317px;
+    //margin-left: 317px;
 
     &::after {
       content: '';
@@ -549,13 +553,13 @@
   }
 
   &__item--measuring {
-    padding-top: 38px;
-    margin-left: 305px;
+    padding-bottom: 38px;
+    //margin-left: 305px;
 
     &::before {
       content: '';
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 0;
       width: 2px;
       height: 20px;
